@@ -1,0 +1,104 @@
+
+.parent-horse-style{
+    display: flex;
+    justify-content: center;
+}
+.horse-style{
+    display: flex;
+    width: 200px;
+    height: 150px;
+    border: 5px solid red;
+    border-radius: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    font-size: 0.5rem;
+    padding: 20px;
+}
+.upper{
+    text-transform: uppercase;
+}
+.lower{
+    text-transform: lowercase;
+}
+#letter{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-bottom: 2px solid red;
+    text-align: center;
+}
+.family-fonts{
+    font-size: 1.3rem;
+}
+.title-fontes{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.serif{
+    font-family: serif;
+}
+.sans-serif{
+    font-family: sans-serif;
+}
+.monospace{
+    font-family: monospace;
+}
+.cursive{
+    font-family: cursive;
+}
+.fantasy{
+    font-family: fantasy;
+}
+.oblique{
+    font-style: oblique;
+}
+.italic{
+    font-style: italic;
+}
+.oblique,
+.italic{
+    font-size: 1.9rem;
+}
+.bold,
+.thin,
+.bolder{
+    font-family: Helvetica;
+}
+.thin{
+    font-weight: 100;
+}
+.bold{
+    font-weight: 600;
+}
+.bolder{
+    font-weight: 900;
+}
+.small,
+.big{
+    width: 600px;
+    background-color: pink;
+    border-radius: 5px;
+}
+.small{
+    font-size: 7px;
+}
+.big{
+    font-size: 48px;
+}
+.block-to-inline{
+    width: 50px;
+    height: 50px;
+    background-color: #5fe;
+    border-radius: 5px solid;
+    margin: 10px; 
+    display: inline-block;
+}
+.inline-to-block{
+    text-align: center;
+    background-color: #9e1;
+    border-radius: 5px solid;
+    margin: 10px;
+    display: block;
+}
+.invisible {
+    display: none;
+}

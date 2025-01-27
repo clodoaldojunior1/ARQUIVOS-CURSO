@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2>Formuário</h2>
+    <form action="register.java" method="GET">
+      <div>
+        <label for="text">Nome:</label>
+        <input type="text" />
+      </div>
+      <div>
+        <label for="age">Idade:</label>
+        <input type="text" name="age" />
+      </div>
+      <!-- select -->
+       <div>
+        <label for="setor">Selecione o seu setor:</label>
+        <select name="setor">
+          <option value="frontend">Front-End Development</option>
+          <option value="backend">Back-End Development</option>
+          <option value="devops">DevOps</option>
+          <option value="infra">Infra</option>
+          <option value="tester">Tester/QA</option>
+        </select>
+       </div>
+       <!-- atributo selected -->
+       <div>
+          <label for="termo">Você leu o termo de responsabilidade?</label>
+          <select name="termo">
+            <option value="sim">Sim</option>
+            <option value="nao" selected>Não</option>
+          </select>
+       </div>
+       <!-- atributo multiple -->
+        <div>
+          <select name="acompanhamentos" multiple>
+            <option value="pao">Pão de Hamburguer</option>
+            <option value="hamburguer">Hamburguer Bovino</option>
+            <option value="queijo">Queijo</option>
+            <option value="presunto">Presunto</option>
+          </select>
+        </div>
+        <!-- text area | bio insta | comentarios etc -->
+         <div>
+          <label for="comentarios">Qual sua sugestão?</label>
+          <textarea name="comentarios"></textarea>
+         </div>
+         <!-- fieldset e legend -->
+          <div>
+            <fieldset>
+              <legend>Preencha seu endereço:</legend>
+              <label for="cidade">Cidade:</label>
+              <input type="text" name="cidade">
+              <label for="estado">Estado:</label>
+              <input type="text" name="estado">
+              <label for="cidade">Cidade:</label>
+              <input type="text" name="cidade">
+              <label for="numero">Numero da casa:</label>
+              <input type="text" name="numero">
+            </fieldset>
+          </div>
+          <div>
+            <!-- datalist => datalist id -> input/list -->
+            <label for="sabor">Escolha seu sabor:</label>
+            <input type="text" name="sabor" list="sabores">
+
+            <datalist id="sabores">
+              <option value="Chocolate"></option>
+              <option value="Maracuja"></option>
+              <option value="Tangerina"></option>
+              <option value="Morango"></option>
+            </datalist>
+          </div>
+          <!-- password -->
+           <div>
+            <label for="password">Digite sua senha:</label>
+            <input type="password" name="password">
+           </div>
+           <!-- input radio -->
+          <div>
+            <label for="carro_modelo">Escolha o modelo do seu carro:</label>
+            <div class="radio">
+              <input type="radio" value="bmw" name="carro_modelo">
+              <label for="bmw">BMW</label>
+            </div>
+            <div class="radio">
+              <input type="radio" value="corolla" name="carro_modelo">
+              <label for="corolla">Corolla</label>
+            </div>
+            <div class="radio">
+              <input type="radio" value="ferrari" name="carro_modelo">
+              <label for="ferrari">Ferrari</label>
+            </div>
+          </div>
+          <!-- reset -->
+          <div>
+            <input type="reset" value="Limpar">
+           </div>
+           <div>
+            <input type="submit" value="Enviar">  
+           </div>
+           <!-- submit -->
+
+    </form>
+  </body>
+</html>

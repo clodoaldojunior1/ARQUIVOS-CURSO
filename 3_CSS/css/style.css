@@ -1,0 +1,54 @@
+.title1 {
+  font-size: 3rem;
+  color: black;
+}
+ul {
+  display: flex;
+  border: 1px solid yellow;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+li {
+  padding: 50px;
+  list-style-type: none;
+  background-color: #000000;
+}
+.paragraph {
+  background-color: black;
+  color: white;
+  padding: 50px;
+}
+#title-exclusive {
+  background-color: blueviolet;
+  color: gold;
+  font-size: 5rem;
+}
+#title-exclusive:hover {
+  color: rgba(255, 215, 0, 0.5);
+}
+#title-main:hover {
+  color: hsl(154, 54%, 50%);
+  background-color: hsl(159, 95%, 10%);
+}
+li:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.no-center-bg,
+.centered-bg {
+  height: 400px;
+  width: 400px;
+  background-image: url("../assets/img-japan.jpg");
+}
+
+.centered-bg{
+  background-size: cover;
+  background-position: center;
+}
+
+.card { 
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255,255,255,0.5); 
+    box-shadow: 0 1px 12px rgba(0,0,0,0, 0.25);
+    border: 10px solid rgba(255,255,255, 0.3); 
+  }

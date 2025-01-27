@@ -1,0 +1,35 @@
+#box-model{
+    background-color: #753;
+    outline: 5px solid rgb(136, 51, 51);
+    padding-left: 500px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 50px;
+}
+#box-model-2{
+    background-color: #753;
+    border: 5px solid rgb(136, 51, 51);
+    box-sizing: border-box;
+    width: 200px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+.conteudo-box-model{
+background-color: blueviolet;
+}
+.conteudo-box-model-2:hover{
+    color: black;
+    background-color: white;
+    opacity: 0.8;
+}
+.border-dotted{
+    border: 4px dotted red;
+    border-radius: 1000px;
+}
+.border-dashed{
+    margin-top: 5px;
+    border: 4px dashed red;
+    border-radius: 1000px;  
+}

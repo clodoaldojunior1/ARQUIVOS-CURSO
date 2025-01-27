@@ -1,0 +1,45 @@
+.shorthand-properties-specific{
+    width: 200px;
+    height: 160px;
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+.shorthand-properties-resume{
+    width: 200px;
+    height: 160px;
+    border: 1px solid black;
+    padding: 50px;
+    box-sizing: border-box;
+
+}
+.shorthand-properties-geral{
+    width: 200px;
+    height: 160px;
+    border: 1px solid black;
+    padding: 20px 10px 20px 25px;
+    margin-bottom: 400px;
+}
+.borderbox-sizing,
+.borderbox-sizing-apply
+{
+    width: 200px;
+    height: 100px;
+    border: 1px solid rgb(8, 20, 20);
+    padding: 20px;
+    background-image: url(../assets/imaggem-star.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 1.5rem;
+}
+.borderbox-sizing-apply{
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+.borderbox-sizing:hover,
+.borderbox-sizing-apply:hover{
+    box-sizing: border-box;
+
+}
