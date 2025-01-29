@@ -8,17 +8,19 @@
   </head>
   <body>
     <h2>Formuário</h2>
+    <!-- form -->
     <form action="register.java" method="GET">
       <div>
         <label for="text">Nome:</label>
         <input type="text" />
       </div>
+      <!-- atributo name -->
       <div>
         <label for="age">Idade:</label>
         <input type="text" name="age" />
       </div>
       <!-- select -->
-       <div>
+      <div>
         <label for="setor">Selecione o seu setor:</label>
         <select name="setor">
           <option value="frontend">Front-End Development</option>
@@ -27,85 +29,137 @@
           <option value="infra">Infra</option>
           <option value="tester">Tester/QA</option>
         </select>
-       </div>
-       <!-- atributo selected -->
-       <div>
-          <label for="termo">Você leu o termo de responsabilidade?</label>
-          <select name="termo">
-            <option value="sim">Sim</option>
-            <option value="nao" selected>Não</option>
-          </select>
-       </div>
-       <!-- atributo multiple -->
-        <div>
-          <select name="acompanhamentos" multiple>
-            <option value="pao">Pão de Hamburguer</option>
-            <option value="hamburguer">Hamburguer Bovino</option>
-            <option value="queijo">Queijo</option>
-            <option value="presunto">Presunto</option>
-          </select>
+      </div>
+      <!-- atributo selected -->
+      <div>
+        <label for="termo">Você leu o termo de responsabilidade?</label>
+        <select name="termo">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Não</option>
+        </select>
+      </div>
+      <!-- atributo multiple -->
+      <div>
+        <select name="acompanhamentos" multiple>
+          <option value="pao">Pão de Hamburguer</option>
+          <option value="hamburguer">Hamburguer Bovino</option>
+          <option value="queijo">Queijo</option>
+          <option value="presunto">Presunto</option>
+        </select>
+      </div>
+      <!-- text area | bio insta | comentarios etc -->
+      <div>
+        <label for="comentarios">Qual sua sugestão?</label>
+        <textarea name="comentarios"></textarea>
+      </div>
+      <!-- fieldset e legend -->
+      <div>
+        <fieldset>
+          <legend>Preencha seu endereço:</legend>
+          <label for="cidade">Cidade:</label>
+          <input type="text" name="cidade" />
+          <label for="estado">Estado:</label>
+          <input type="text" name="estado" />
+          <label for="rua">Rua:</label>
+          <input type="text" name="rua" />
+          <label for="numero">Numero da casa:</label>
+          <input type="text" name="numero" />
+        </fieldset>
+      </div>
+      <div>
+        <!-- datalist => datalist id -> input/list -->
+        <label for="sabor">Escolha seu sabor:</label>
+        <input type="text" name="sabor" list="sabores" />
+
+        <datalist id="sabores">
+          <option value="Chocolate"></option>
+          <option value="Maracuja"></option>
+          <option value="Tangerina"></option>
+          <option value="Morango"></option>
+        </datalist>
+      </div>
+      <!-- password -->
+      <div>
+        <label for="password">Digite sua senha:</label>
+        <input type="password" name="password" />
+      </div>
+      <!-- input radio -->
+      <div>
+        <label for="carro_modelo">Escolha o modelo do seu carro:</label>
+        <div class="radio">
+          <input type="radio" value="bmw" name="carro_modelo" />
+          <label for="bmw">BMW</label>
         </div>
-        <!-- text area | bio insta | comentarios etc -->
-         <div>
-          <label for="comentarios">Qual sua sugestão?</label>
-          <textarea name="comentarios"></textarea>
-         </div>
-         <!-- fieldset e legend -->
-          <div>
-            <fieldset>
-              <legend>Preencha seu endereço:</legend>
-              <label for="cidade">Cidade:</label>
-              <input type="text" name="cidade">
-              <label for="estado">Estado:</label>
-              <input type="text" name="estado">
-              <label for="cidade">Cidade:</label>
-              <input type="text" name="cidade">
-              <label for="numero">Numero da casa:</label>
-              <input type="text" name="numero">
-            </fieldset>
-          </div>
-          <div>
-            <!-- datalist => datalist id -> input/list -->
-            <label for="sabor">Escolha seu sabor:</label>
-            <input type="text" name="sabor" list="sabores">
+        <div class="radio">
+          <input type="radio" value="corolla" name="carro_modelo" />
+          <label for="corolla">Corolla</label>
+        </div>
+        <div class="radio">
+          <input type="radio" value="ferrari" name="carro_modelo" />
+          <label for="ferrari">Ferrari</label>
+        </div>
+      </div>
+      <div>
+        <label for="optionals">Opções do Carro</label>
+        <div class="radio">
+          <input type="checkbox" name="optionals[]" value="pneus_grandes" />
+          <label for="pneus_grandes">Pneus Grandes</label>
+        </div>
+        <div class="radio">
+          <input type="checkbox" name="optionals[]" value="motor_turbo" />
+          <label for="motor_turbo">Motor Turbo</label>
+        </div>
+      </div>
+      <!-- datas -->
+      <div>
+        <label for="birthday">Digite a data do seu nascimento:</label>
+        <input type="date" name="birthday" />
+      </div>
+      <!-- inserir files -->
+      <div>
+        <label for="files">Insira um arquivo</label>
+        <input type="file" name="files" />
+      </div>
 
-            <datalist id="sabores">
-              <option value="Chocolate"></option>
-              <option value="Maracuja"></option>
-              <option value="Tangerina"></option>
-              <option value="Morango"></option>
-            </datalist>
-          </div>
-          <!-- password -->
-           <div>
-            <label for="password">Digite sua senha:</label>
-            <input type="password" name="password">
-           </div>
-           <!-- input radio -->
-          <div>
-            <label for="carro_modelo">Escolha o modelo do seu carro:</label>
-            <div class="radio">
-              <input type="radio" value="bmw" name="carro_modelo">
-              <label for="bmw">BMW</label>
-            </div>
-            <div class="radio">
-              <input type="radio" value="corolla" name="carro_modelo">
-              <label for="corolla">Corolla</label>
-            </div>
-            <div class="radio">
-              <input type="radio" value="ferrari" name="carro_modelo">
-              <label for="ferrari">Ferrari</label>
-            </div>
-          </div>
-          <!-- reset -->
-          <div>
-            <input type="reset" value="Limpar">
-           </div>
-           <div>
-            <input type="submit" value="Enviar">  
-           </div>
-           <!-- submit -->
+      <!-- input de numeros -->
+      <div>
+        <label for="salary">Insira seu salário</label>
+        <input type="number" name="salary" />
+      </div>
+      <!-- input email -->
+      <div>
+        <label for="email">Insira seu email:</label>
+        <input type="email" name="email" />
+      </div>
 
+      <!-- atributo value = value:valor instrutivo -->
+      <div>
+        <label for="value">Insira algum valor </label>
+        <input type="text" name="value" value="seilá: 200?" />
+      </div>
+      <!--disabled -->
+      <div>
+        <p>Tente mudar o valor: IMPOSSIVEL</p>
+        <input type="text" disabled />
+      </div>
+      <!-- placeholder -->
+      <div>
+        <label for="currentjob">Qual o seu emprego atual:</label>
+        <input type="text" name="currentjob" placeholder="Digite o nome do seu cargo.">
+      </div>
+      <!-- required -->
+       <div>
+        <label for="year">digite o ano em que você nasceu:</label>
+        <input type="text" name="year" placeholder="Ano do nascimento" required>
+       </div>
+      <!-- reset -->
+      <div>
+        <input type="reset" value="Limpar" />
+      </div>
+      <!-- submit -->
+      <div>
+        <input type="submit" value="Enviar" />
+      </div>
     </form>
   </body>
 </html>
