@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu carro!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div class="container">
+        <div class="header">
+            <h3>Cadastre seu veículo para vender mais rápido!</h3>
+        </div>
+        <form>
+            <div class="form-container">
+                <div class="form-header">
+                    <p>Formulário</p>
+                </div>
+                <div class="form-body">
+                    <h1 class="form-title">Venda seu carro rápido.</h1>
+                    <p>Descreva as características do carro e marque as opcionais que ele possui</p>
+                    <div class="box-input">
+                        <label for="text">Título do anuncio <span class="required-field">*</span></label>
+                        <input type="text"
+                         name="title" 
+                         id="title" 
+                         class="block" 
+                         placeholder="Título para anunciar seu carro" 
+                         minlength="1"  
+                         maxlength="30"
+                         required>
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Preço <span class="required-field">*</span></label>
+                        <input type="number"
+                         name="price" 
+                         id="price" 
+                         class="block" 
+                         placeholder="Defina o preço" 
+                         required>
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Descrição: <span class="required-field">*</span></label>
+                        <textarea name="description" id="description" class="block" placeholder="aqui você coloca os detalhes do veículo, por exemplo: se ele tem algum arranhão."></textarea>
+                        
+                    </div>
+                    <input type="submit" value="enviar">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
