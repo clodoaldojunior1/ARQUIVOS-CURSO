@@ -1,40 +1,77 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Unbounded", serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Unbounded", serif;
 }
-.navbar-container{
-    width: 100%;
-    height: 80px;
-    background-color: #67a0e0;
+h1,
+h2,
+h3 {
+  color: #333;
 }
-nav{
-    position: relative;
+p {
+  color: #70747a;
 }
-.bottle{
-    width: 50px;
-    margin-top: 15px;
+.navbar-container {
+  width: 100%;
+  height: 80px;
+  background-color: #67a0e0;
+  padding: 0 2rem;
 }
-.navbar-items{
-    right: 0;
-    position: absolute;
-    display: inline-block;
-    height: 80px;
-    line-height: 80px;
+nav {
+  position: relative;
 }
-.navbar-items li{
-    display: inline;
-    margin: 20px;
-    text-transform: uppercase;
-    
+.bottle {
+  width: 50px;
+  margin-top: 15px;
 }
-.navbar-items a{
-    text-decoration: none;
-    color: #fff;
-    transition: 0.6s;
+.navbar-items {
+  right: 0;
+  position: absolute;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+}
+.navbar-items li {
+  display: inline;
+  margin: 20px;
+  text-transform: uppercase;
+}
+.navbar-items a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.6s;
 }
 
-.navbar-items a:hover{
-    color: #ccc;
+.navbar-items a:hover {
+  color: #ccc;
+}
+.navbar-items .default-btn {
+  padding: 15px 25px;
+  background-color: #17467c;
+  border-radius: 25px;
+}
+.navbar-items .default-btn:hover {
+  background-color: #2866ad;
+  padding: 18px 28px;
+  color: #fff;
+}
+.main-banner {
+  background-image: url("../img/woman-drinkwater.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0;
+}
+.main-banner h1,
+.main-banner p {
+  color: #086499;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: #1b2c50 3px 2px 3px;
+}
+.main-banner h1 {
+  font-size: 54px;
+}
+.main-banner p {
+  font-size: 32px;
 }
