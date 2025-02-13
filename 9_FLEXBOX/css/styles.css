@@ -1,3 +1,4 @@
+
 .flex-box {
   display: flex;
   background-color: #ccc;
@@ -86,27 +87,73 @@
   width: 32%;
 }
 /* order | filhos */
-.order{
+.order {
   margin-top: 20px;
   display: flex;
   margin-bottom: 50px;
 }
-#one{
+#one {
   order: 1;
 }
-#two{
+#two {
   order: 2;
 }
-#three{
+#three {
   order: 3;
 }
 /* grow | filhos*/
-.grow{
+.grow {
   display: flex;
 }
-.grow .box{
+.grow .box {
   flex: 1;
 }
 .grow .big {
   flex: 2;
+}
+/* basis | filhos */
+.basis {
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: 50px;
+}
+.basis .box {
+  flex-basis: 50px;
+}
+.basis .big {
+  flex-grow: 1;
+}
+/* shrink | filhos */
+.shrink {
+  display: flex;
+}
+.shrink .box {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+  width: auto;
+}
+.shrink .small {
+  flex-shrink: 2;
+}
+/*  shorthand | tudo junto (grow, shrink e basis)  */
+.shorthand {
+  display: flex;
+}
+.shorthand .box{
+  flex: 1 1 30px;
+}
+.shorthand .different{
+  flex: 3 1 250px;
+}
+/* auto alinhamento */
+.self-align{
+  margin-top: 30px;
+  display: flex;
+  height: 300px;
+  border: 1px solid rgb(192, 0, 58);
+  align-items: flex-end;
+}
+.self-align .different{
+  align-self: center;
 }
