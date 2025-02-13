@@ -74,6 +74,7 @@
 .stretch .box {
   height: auto;
 }
+/* gap | espaçamento */
 .gap {
   display: flex;
   flex-wrap: wrap;
@@ -83,4 +84,29 @@
 }
 .gap .box {
   width: 32%;
+}
+/* order | filhos */
+.order{
+  margin-top: 20px;
+  display: flex;
+  margin-bottom: 50px;
+}
+#one{
+  order: 1;
+}
+#two{
+  order: 2;
+}
+#three{
+  order: 3;
+}
+/* grow | filhos*/
+.grow{
+  display: flex;
+}
+.grow .box{
+  flex: 1;
+}
+.grow .big {
+  flex: 2;
 }
