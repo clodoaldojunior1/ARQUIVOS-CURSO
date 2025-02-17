@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main{
+    display: flex;
+}
+nav{
+    display: flex;
+    border-bottom: 1px double rgb(223, 221, 221);
+    border: 1px solid red;
+    height: 60px;
+    width: 100%;
+    padding: 20px;
+}
+#navbar-container{
+    display: flex;
+}
+
+#logo-instagram{
+    width: 83px;
+    height: 29px;
+    cursor: pointer;
+}
+#navbar-container{
+    position: absolute;
+    display: flex;
+    
+}
