@@ -57,6 +57,7 @@ body {
   width: 268px;
   margin: 5px auto;
 }
+#login-form input
 #login-form input[type="submit"] {
   background-color: #b2dffc;
   color: #fff;
@@ -166,12 +167,41 @@ footer #footer-links {
   margin-right: 10px;
 }
 #footer-links a,
-#footer-links #copyright{
+#footer-links #copyright {
   text-decoration: none;
-  color:#8e8e8e;
+  color: #8e8e8e;
   font-size: 12px;
 }
-#copyright{
+#copyright {
   margin-top: 10px;
-  color:#8e8e8e;
+  color: #8e8e8e;
+}
+@media screen and (max-width: 450px) {
+  body {
+    background-color: #fff;
+  }
+  #banner-container {
+    display: none;
+  }
+  #main-container,
+  #form-box {
+    margin-top: 0;
+  }
+  #form-container,
+  #form-box,
+  #register-container,
+  #get-app-container {
+    width: 100%;
+    border: none;
+  }
+  footer{
+    width: 85%;
+  }
+  #footer-links{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #footer-links{
+    margin-bottom: 10px;
+  }
 }
