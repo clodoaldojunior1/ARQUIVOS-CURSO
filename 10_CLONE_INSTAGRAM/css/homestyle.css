@@ -4,45 +4,64 @@
   box-sizing: border-box;
   font-family: Helvetica;
 }
-main{
-    display: flex;
+nav {
+  display: flex;
+  border-bottom: 1px double rgb(223, 221, 221);
+  height: 60px;
+  width: 100%;
+  justify-content: center;
 }
-nav{
-    display: flex;
-    border-bottom: 1px double rgb(223, 221, 221);
-    height: 60px;
-    width: 100%;
-    justify-content: center;
-}
-#navbar-container{
-    width: 960px;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+#navbar-container {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-#logo-instagram{
-    width: 95px;
-    height: 29px;
-    cursor: pointer;
+#logo-instagram {
+  width: 95px;
+  height: 29px;
+  cursor: pointer;
 }
-#navbar-container{
-    position: absolute;
-    display: flex;
+#navbar-container {
+  position: absolute;
+  display: flex;
 }
 #btn-login,
-#btn-register{
-    font-size: 13px;
-    font-weight: bold;
-    text-decoration: none;
+#btn-register {
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
 }
-#btn-login{
-    background-color: rgba(0, 149, 246, 1);
-    padding: 8px 16px;
-    border-radius: 8px;
-    color: aliceblue;
+#btn-login {
+  background-color: rgba(0, 149, 246, 1);
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: aliceblue;
 }
-#btn-register{
-    color: rgba(0, 149, 246, 1);
-    margin-left: 8px;
+#btn-register {
+  color: rgba(0, 149, 246, 1);
+  margin-left: 8px;
+}
+#content-container {
+
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: 1px double rgb(223, 221, 221);
+  border-radius: 1px;
+  display: flex;
+  width: 380px;
+  height: 500px;
+  margin: 65px auto;
+  margin-top: 80px;
+}
+#header-container {
+  padding: 30px;
+  display: flex;
+}
+.description-container {
+  display: flex;
 }
