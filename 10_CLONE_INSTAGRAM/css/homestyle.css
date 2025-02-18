@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Helvetica;
 }
 main{
     display: flex;
@@ -9,22 +10,39 @@ main{
 nav{
     display: flex;
     border-bottom: 1px double rgb(223, 221, 221);
-    border: 1px solid red;
     height: 60px;
     width: 100%;
-    padding: 20px;
+    justify-content: center;
 }
 #navbar-container{
+    width: 960px;
     display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 #logo-instagram{
-    width: 83px;
+    width: 95px;
     height: 29px;
     cursor: pointer;
 }
 #navbar-container{
     position: absolute;
     display: flex;
-    
+}
+#btn-login,
+#btn-register{
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#btn-login{
+    background-color: rgba(0, 149, 246, 1);
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: aliceblue;
+}
+#btn-register{
+    color: rgba(0, 149, 246, 1);
+    margin-left: 8px;
 }
